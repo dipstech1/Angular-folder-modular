@@ -1,0 +1,28 @@
+
+<div class="container">
+  
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>BODY</th>
+                    <th>TITLE</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let user of userData">
+                    <td>{{user.id}}</td>
+                    <td>{{user.body}}</td>
+                    <td>{{user.title}}</td>
+                    <td>
+                        <span class="button" style="cursor: pointer" (click)="takeAction(user, 'Delete')"><i class="fa fa-trash" aria-hidden="true"></i></span>
+                        <span class="button" style="padding-left: 25px; cursor: pointer" (click)="takeAction(user, 'Edit')"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
