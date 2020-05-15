@@ -27,7 +27,8 @@ export class CoreModule {
         LoaderService,
         DataService, 
         { provide: HTTP_INTERCEPTORS, useClass: HttpConfigInterceptor, multi: true },
-        { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+        { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
+
       ] 
     };
   }

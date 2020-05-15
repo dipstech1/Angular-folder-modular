@@ -7,8 +7,8 @@ import { LoaderComponent } from './components/loader/loader.component'
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 
-import { AlertModule } from 'ngx-bootstrap';
-import { ModalModule } from 'ngx-bootstrap';
+import { AlertModule } from 'ngx-bootstrap/alert';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 
 import { ConfirmPopupComponent } from './components/confirm-popup/confirm-popup.component';
@@ -31,6 +31,6 @@ import { NgxTypeaheadModule } from 'ngx-typeahead';
     RouterModule,
     NgxTypeaheadModule
   ],
-  exports : [FooterComponent,LoaderComponent,NavbarComponent,ConfirmPopupComponent,ModalModule,ReactiveFormsModule,FormsModule,TypeaheadModule]
+  exports : [FooterComponent,HeaderComponent,LoaderComponent,NavbarComponent,ConfirmPopupComponent,ModalModule,ReactiveFormsModule,FormsModule,TypeaheadModule]
 })
 export class SharedModule { }

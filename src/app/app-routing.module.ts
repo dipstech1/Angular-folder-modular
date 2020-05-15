@@ -13,6 +13,7 @@ const routes: Routes = [
     path : '',
     component : PreauthComponent,
     canActivate : [LoginGuard],
+    // loadChildren : () => import('../app/pre-auth/pre-auth.module').then(m => m.PreAuthModule)
     loadChildren : () => import('../app/pre-auth/pre-auth.module').then(m => m.PreAuthModule)
   },
   {
